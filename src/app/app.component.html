@@ -1,0 +1,14 @@
+<div class="container">
+    <app-overview 
+    (onserveradded)=" OnAddserver($event)"
+    (onBlueprintadded)=" OnAddserverBlueprint($event)"
+    ></app-overview><br>
+    <div class="row">
+        <div class="col-xs-12">
+            <app-addserver *ngFor="let sev of servers" [element]="sev"></app-addserver>
+        </div>
+    </div>
+</div>
+
+
+
